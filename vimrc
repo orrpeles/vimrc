@@ -1,7 +1,7 @@
 " Mappings
 " setting mapleader to ','
 :let mapleader = ','
-:let maplocalleader = '\\'
+:let maplocalleader = ',,'
 " Edit vimrc and source the changes http://learnvimscriptthehardway.stevelosh.com/chapters/07.html
 " Edit vimrc from remote buffer
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -28,3 +28,7 @@ autocmd VimEnter * echo ">^.^<"
 :noremap <Down> <Nop>
 :noremap <Left> <Nop>
 :noremap <Right> <Nop>
+" sorround a word by ''
+:nnoremap <leader>w bi'<esc>ea'<esc>
+" sorround a string by ''
+:nnoremap <leader>s ^i'<esc>$a'<esc>
