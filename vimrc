@@ -2,13 +2,19 @@
 " setting mapleader to ','
 :let mapleader = "\<space>"
 :let maplocalleader = ',,'
+" set colorscheme
+:colorscheme ron 
 " Edit vimrc and source the changes http://learnvimscriptthehardway.stevelosh.com/chapters/07.html
 " Edit vimrc from remote buffer
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source vimrc changes
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" save work
+:nnoremap <leader>w :w!<cr>
+" quit
+:nnoremap <leader>q :q!<cr>
 " move line up
-" :nnoremap <leader><space> ddkP
+:nnoremap <leader><space> ddkP
 " add ASCII art cat when opening vim
 autocmd VimEnter * echo ">^.^<"
 " delete a single char
@@ -28,7 +34,7 @@ autocmd VimEnter * echo ">^.^<"
 :noremap <Left> <Nop>
 :noremap <Right> <Nop>
 " sorround a word by ''
-:nnoremap <leader>w bi'<esc>ea'<esc>
+" nnoremap <leader>w bi'<esc>ea'<esc>
 " sorround a full sentence  by ''
 :nnoremap <leader>s ^i'<esc>$a'<esc>
 " add bin/python to python files
