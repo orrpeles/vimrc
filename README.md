@@ -10,3 +10,8 @@ Guide to vim:
 * vimtutor
 * http://learnvimscriptthehardway.stevelosh.com/
 
+Plugins:
+* Choose a plugin (I chose vim-plug which is easy to setup and run)
+* Choose a plugin, this is an excellent resource: https://vimawesome.com/
+* Import to vimrc, save, source it and install the plugin (:PlugInstall)
+* Documentation of plugin: :help PluginName
